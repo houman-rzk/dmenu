@@ -8,6 +8,7 @@ static int min_width = 500;                    /* minimum width when centered */
 /* -fn option overrides fonts[0]; default X11 font or font set */
 static const char *fonts[] = {
 	"monospace:size=12",
+//	"BitstreamVeraSansMono Nerd Font Mono:style=Roman:pixelsize=30:antialias=true:autohint=true"
 	"JoyPixels:pixelsize=12:anitalias=true:autohint=true"
 };
 static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
