@@ -773,10 +773,11 @@ readxresources(void) {
 		XrmDatabase xdb = XrmGetStringDatabase(xrm);
 		XrmValue xval;
 
-		if (XrmGetResource(xdb, "dmenu.font", "*", &type, &xval))
+		/*if (XrmGetResource(xdb, "dmenu.font", "*", &type, &xval))
 			fonts[0] = strdup(xval.addr);
 		else
-			fonts[0] = strdup(fonts[0]);
+			fonts[0] = strdup(fonts[0]);*/
+		fonts[0] = strdup(fonts[0]);
 		if (XrmGetResource(xdb, "background", "*", &type, &xval))
 			colors[SchemeNorm][ColBg] = strdup(xval.addr);
 		else
